@@ -45,6 +45,5 @@ fn get_pmset_result() -> Result<Child, io::Error> {
         .arg("-g")
         .stdout(Stdio::piped())
         .spawn()?;
-
     Ok(out)
 }
